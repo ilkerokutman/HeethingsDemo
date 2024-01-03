@@ -1,0 +1,90 @@
+name: heethings_demo
+description: "A new Flutter project."
+publish_to: 'none' 
+version: 1.0.13+1013
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get_storage: ^2.1.1
+  get: ^4.6.6
+  dio: ^5.3.4
+  flutter_svg: ^2.0.9
+  mqtt_client: ^10.0.0
+  flutter_guid: ^0.3.1
+  intl: ^0.18.1
+  sleek_circular_slider: ^2.0.1
+  connectivity_plus: ^5.0.2
+  qr_flutter: ^4.1.0
+  simple_shadow: ^0.3.1
+  qr_code_scanner: ^1.0.1
+  permission_handler: ^11.1.0
+  camera: ^0.10.5+5
+  mask_text_input_formatter: ^2.7.0
+  flutter_barcode_scanner: ^2.0.0
+  flutter_native_splash: ^2.3.7
+  syncfusion_flutter_sliders: ^24.1.41
+  syncfusion_flutter_core: ^24.1.41
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  min_sdk_android: 23
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#0087DE"
+  adaptive_icon_foreground: "assets/images/app_icon_2.png"
+  remove_alpha_ios: true
+  web:
+    generate: false
+  windows:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/images/app_icon.png"
+
+flutter_native_splash:
+  color: "#0087DE"
+  image: "assets/images/app_icon_2.png"
+  color_dark: "#0087DE"
+  image_dark: "assets/images/app_icon_2.png"
+  android_12:
+    image: "assets/images/app_icon_2.png"
+    color: "#0087DE"
+    icon_background_color: "#0087DE"
+  fullscreen: true
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/cert/
+
+# dart run flutter_launcher_icons:main -f pubspec.yaml && dart run flutter_native_splash:create 
+
+
+# ios / macos testflight
+# https://testflight.apple.com/join/t984XmD9
+
+# android beta:
+# https://play.google.com/apps/testing/com.heethings.demo
+
+# android apk:
+# https://static.api2.run/heethings/1.0.12/HeethingsDemo_android.zip
+
+# windows
+# https://static.api2.run/heethings/1.0.12/HeethingsDemo_windows.zip
+
+
