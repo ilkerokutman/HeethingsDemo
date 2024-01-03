@@ -1,0 +1,20 @@
+name: heethings-demo
+base: core18
+version: '1.0.10'
+summary: Demonstration of Heethings Connect
+description: |
+  This app showcases Heethings Connect device communication
+
+grade: devel
+confinement: devmode
+
+apps:
+  heethings-demo:
+    command: heethings_demo
+    extensions: [flutter-stable]
+
+parts:
+  heethings-demo:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart
